@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'quickrun'
 Bundle 'The-NERD-tree'
 Bundle 'snipMate'
+Bundle 'surround.vim'
 " </Vundle>
 
 " start original .vimrc statements
