@@ -13,6 +13,7 @@ complete -d cd # cd の補完ではディレクトリのみを対象にする
 export PS1="\[\033[1;4;32m\][\H]:\[\033[0m\]\[\033[1;37m\]\w\[\033[0m\]\n[\u]\\$ "
 # alias
 alias l='ls -l'
+alias la='ls -la'
 alias ee='exit'
 alias e='exit'
 alias rm='rm -i'
