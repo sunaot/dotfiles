@@ -6,7 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 export NLS_LANG=.UTF8
-export PATH=$PATH:$ORACLE_HOME/bin
+export LANG=ja_JP.utf8
 
 # User specific aliases and functions
 complete -d cd # cd の補完ではディレクトリのみを対象にする

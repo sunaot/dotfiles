@@ -16,6 +16,5 @@ export SVN_EDITOR=vim
 stty stop undef # stop terminal locking (then Ctrl+S would be free.)
 screen -R
 
-export LANG=ja_JP.utf8
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
