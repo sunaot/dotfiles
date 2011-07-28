@@ -28,3 +28,6 @@ alias sv='sudo vim'
 alias g='newgrp'
 alias i='id -a'
 
+function pu {
+	phpunit $1 2>&1 | redgreen
+}
