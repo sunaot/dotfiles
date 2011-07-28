@@ -10,7 +10,7 @@ failure_set = '(^FAILURES!$|^Tests: \d+, Assertions: \d+, .*|^\d+\))'
 ok_set = '(^OK .*$)'
 exception_set = '(^Exception:)'
 testcase_name = '^(.*Test)$'
-messages = '^(Warning:|PHP Fatal error:|Unexpected PHP error)'
+messages = '^(Warning:|PHP Fatal error:|Unexpected PHP error:|PHP Parse error:)'
 puts $stdin.readlines.map {|s| 
   s.chomp!
   s.gsub!(/#{banner_set}/, '\\1'.blue.bold)
