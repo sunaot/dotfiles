@@ -9,9 +9,13 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'quickrun'
 Bundle 'The-NERD-tree'
-Bundle 'snipMate'
+" Bundle 'snipMate'
+Bundle 'neocomplcache'
 Bundle 'surround.vim'
 " </Vundle>
+" <neocomplcache see="https://github.com/Shougo/neocomplcache/blob/master/README">
+let g:neocomplcache_enable_at_startup = 1
+" </neocomplcache>
 
 " start original .vimrc statements
 filetype on
