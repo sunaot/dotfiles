@@ -7,12 +7,13 @@ fi
 
 export NLS_LANG=.UTF8
 export LANG=ja_JP.utf8
-export PATH=$HOME/bin:$PATH
 
 # User specific aliases and functions
 complete -d cd # cd の補完ではディレクトリのみを対象にする
 export PS1="\[\033[1;4;32m\][\H]:\[\033[0m\]\[\033[1;37m\]\w\[\033[0m\]\n[\u]\\$ "
 # alias
+alias rawls='/bin/ls'
+alias ls='ls --color=auto --show-control-char'
 alias l='ls -l'
 alias la='ls -la'
 alias ee='exit'
@@ -25,7 +26,6 @@ alias x='cd ..'
 alias b='cd -'
 alias v='vim'
 alias view='vim -R'
-alias sv='sudo vim'
 alias g='newgrp'
 alias i='id -a'
 

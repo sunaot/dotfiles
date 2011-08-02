@@ -7,8 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/bin
-export PATH
+export PATH=$HOME/bin:$PATH
 export HISTFILESIZE=20000
 export HISTSIZE=20000
 export SVN_EDITOR=vim
