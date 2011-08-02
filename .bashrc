@@ -7,6 +7,7 @@ fi
 
 export NLS_LANG=.UTF8
 export LANG=ja_JP.utf8
+export PATH=$HOME/bin:$PATH
 
 # User specific aliases and functions
 complete -d cd # cd の補完ではディレクトリのみを対象にする
