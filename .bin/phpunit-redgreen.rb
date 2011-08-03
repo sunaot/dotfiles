@@ -3,8 +3,8 @@
 require 'term/ansicolor'
 class String
   include Term::ANSIColor
-  def banner!
-    self.replace("\e[2K#{self}")
+  def banner
+    "\e[2K#{self}"
   end
 end
 
@@ -18,8 +18,8 @@ messages = '^(Warning:|PHP Fatal error:|Unexpected PHP error:|PHP Parse error:)'
 puts $stdin.readlines.map {|s| 
   s.chomp!
   s.gsub!(/#{banner_set}/, '\\1'.blue.bold)
-  s.gsub!(/#{ok_set}/, '\\1'.banner!.on_green.white.bold)
-  s.gsub!(/#{failure_set}/, '\\1'.banner!.on_red.white.bold)
+  s.gsub!(/#{ok_set}/, '\\1'.banner.on_green.white.bold)
+  s.gsub!(/#{failure_set}/, '\\1'.banner.on_red.white.bold)
   s.gsub!(/#{exception_set}/, '\\1'.magenta.bold)
   s.gsub!(/#{testcase_name}/, '\\1'.cyan.bold)
   s.gsub!(/#{result_node}/, '\\1'.red.bold)
