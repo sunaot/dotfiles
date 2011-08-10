@@ -32,6 +32,7 @@ set t_Co=256
 colorscheme molokai
 " set backupcopy=yes
 set encoding=utf-8
+set ambiwidth=double
 
 " Insert <Tab> or complete identifier
 " if the cursor is after a keyword character
