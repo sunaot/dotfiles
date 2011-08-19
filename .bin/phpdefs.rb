@@ -7,18 +7,20 @@
 require 'optparse'
 
 CLASS_RE = /\A\s*(?:
-    class\s | interface\s | require[\s\(] | require_once[\s\(] | include[\s\(] | include_once[\s\(]
+    class\s | abstract\s+class\s | interface\s | require[\s\(] | require_once[\s\(] | include[\s\(] | include_once[\s\(]
   )/x
 
 DEF_RE = /\A\s*
   (?: function\s
     | class\s
+    | abstract\s+class\s
     | interface\s
     | include\b
     | include_once\b
     | require\b
     | require_once\b
     | var\b
+    | abstract\b
     | public\b
     | private\b
     | protected\b
@@ -29,6 +31,7 @@ DEF_RE = /\A\s*
 PUBLIC_RE = /\A\s*
   (?: function\s
     | class\s
+    | abstract\sclass\s
     | interface\s
     | include\b
     | include_once\b
@@ -36,6 +39,7 @@ PUBLIC_RE = /\A\s*
     | require_once\b
     | var\b
     | public\b
+    | abstract\b
     | static\s+function\b
     | static\s+public\b
     | global\b
