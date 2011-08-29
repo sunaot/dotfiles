@@ -39,3 +39,4 @@ alias g='newgrp'
 alias i='id -a'
 
 # vim: nowrap sw=2 sts=2 ts=2 noet ff=unix:
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
