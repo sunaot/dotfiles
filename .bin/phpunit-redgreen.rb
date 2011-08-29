@@ -14,7 +14,7 @@ ok_set = '(^OK .*$)'
 exception_set = '(^Exception:)'
 testcase_name = '^(.*Test)$'
 result_node = '(^\d+\))'
-messages = '^(Warning:|PHP Fatal error:|Unexpected PHP error:|PHP Parse error:)'
+messages = '^(Warning:|PHP Fatal error:|Unexpected PHP error:|PHP Parse error:|PHP Warning:)'
 puts $stdin.readlines.map {|s| 
   s.chomp!
   s.gsub!(/#{banner_set}/, '\\1'.blue.bold)
