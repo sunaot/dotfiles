@@ -7,6 +7,8 @@ fi
 
 export NLS_LANG=.UTF8
 export LANG=ja_JP.utf8
+source ~/.bash.d/history
+source ~/.bash.d/alias
 
 # User specific aliases and functions
 complete -d cd # cd の補完ではディレクトリのみを対象にする
@@ -19,27 +21,6 @@ else
 	# with no Ruby
 	export PS1="\[\033[1;4;32m\][\H]:\[\033[0m\]\[\033[1;37m\]\w\[\033[0m\]\n[\u]\\$ "
 fi
-
-# alias
-alias rawls='/bin/ls'
-alias ls='ls --color=auto --show-control-char'
-alias l='ls -l'
-alias la='ls -la'
-alias ee='exit'
-alias e='exit'
-alias rm='rm -i'
-alias lr='less -r'
-alias grep='grep --color=auto -i -P'
-alias cgrep='/bin/grep --color=always'
-alias ngrep='/bin/grep --color=never'
-
-alias c='cd'
-alias x='cd ..'
-alias b='cd -'
-alias v='vim'
-alias view='vim -R'
-alias g='newgrp'
-alias i='id -a'
 
 # vim: nowrap sw=2 sts=2 ts=2 noet ff=unix:
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

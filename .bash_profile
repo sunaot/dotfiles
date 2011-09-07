@@ -6,10 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-
 export PATH=$HOME/bin:$PATH
-export HISTFILESIZE=20000
-export HISTSIZE=20000
 export SVN_EDITOR=vim
 
 stty stop undef # stop terminal locking (then Ctrl+S would be free.)
