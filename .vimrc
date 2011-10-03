@@ -32,6 +32,8 @@ set t_Co=256
 colorscheme molokai
 " set backupcopy=yes
 set encoding=utf-8
+set fileencodings=utf-8,cp932,euc-jp,iso-2011-jp
+set fileformats=unix,dos,mac
 set ambiwidth=double
 
 " Insert <Tab> or complete identifier
