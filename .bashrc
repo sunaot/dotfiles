@@ -22,5 +22,5 @@ else
 	export PS1="\[\033[1;4;32m\][\H]:\[\033[0m\]\[\033[1;37m\]\w\[\033[0m\]\n[\u]\\$ "
 fi
 
-# vim: nowrap sw=2 sts=2 ts=2 noet ff=unix:
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# vim: nowrap sw=2 sts=2 ts=2 noet ff=unix:
