@@ -5,7 +5,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export NLS_LANG=.UTF8
 export LANG=ja_JP.utf8
 source ~/.bash.d/history
 source ~/.bash.d/alias
