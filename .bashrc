@@ -13,10 +13,10 @@ source ~/.bash.d/alias
 complete -d cd # cd の補完ではディレクトリのみを対象にする
 
 # Prompt setting
-if git branch && ruby -e 'exit 0' > /dev/null 2>&1 ; then
+if which git > /dev/null 2>&1 && ruby -e 'exit 0' > /dev/null 2>&1 ; then
   # with Git and Ruby
 	export PS1="\[\033[1;4;32m\][\H]:\[\033[0m\]\[\033[1;37m\]\w\[\033[0m\]\n[\[\033[1;31m\]\$(git branch 2>/dev/null | /bin/grep "^[*]" | cut -d ' ' -f 2)\[\033[0m\]|\u(\[\033[1;36m\]`id -a | ruby -e '$stdin.read.slice(/gid=\d+\((.*?)\)/); puts $1'`\[\033[0m\])]\\$ " # light cyan
-elif git branch && perl -e '1;' > /dev/null 2>&1 ; then
+elif which git > /dev/null 2>&1 && perl -e '1;' > /dev/null 2>&1 ; then
   # with Git and Perl
   export PS1="\[\033[1;4;32m\][\H]:\[\033[0m\]\[\033[1;37m\]\w\[\033[0m\]\n[\[\033[1;31m\]\$(git branch 2>/dev/null | /bin/grep "^[*]" | cut -d ' ' -f 2)\[\033[0m\]|\u(\[\033[1;36m\]`id -a | perl -e 'while(<>) { print $_ =~ /gid=\d+\((.*?)\)/ }'`\[\033[0m\])]\\$ "   # light cyan
 elif perl -e '1;' > /dev/null 2>&1 ; then
