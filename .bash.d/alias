@@ -6,7 +6,7 @@ alias ee='exit'
 alias e='exit'
 alias rm='rm -i'
 alias lr='less -r'
-alias grep="grep --color=auto -iP -exclude='tags' --exclude='*.svn-*' --exclude='entries' --exclude='*.git-*'"
+alias grep="grep --color=auto -iP --exclude='tags' --exclude='*.svn-*' --exclude='entries' --exclude='*.git-*'"
 alias cgrep='/bin/grep --color=always'
 alias ngrep='/bin/grep --color=never'
 
