@@ -8,6 +8,7 @@ fi
 export LANG=ja_JP.utf8
 source ~/.bash.d/history
 source ~/.bash.d/alias
+source ~/.bash.d/functions
 
 # User specific aliases and functions
 complete -d cd # cd の補完ではディレクトリのみを対象にする

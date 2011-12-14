@@ -1,0 +1,11 @@
+#!/bin/bash
+function part() {
+    from=$1
+    to=$2
+    file=$3
+    if [ -z $from ] || [ -z $to ] || [ -z $file ]; then
+        echo "usage: part \$from \$to \$file"
+        return 1
+    fi
+    head -n$2 $file | tail -n$[$to-$from+1]
+}
