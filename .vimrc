@@ -72,3 +72,9 @@ imap () ()<Left>
 imap '' ''<Left>
 imap "" ""<Left>
 imap \|\| \|\|<Left>
+
+" quickrun options
+if exists('g:loaded_quickrun')
+  source ~/.vim/quickrunrc
+endif
+
