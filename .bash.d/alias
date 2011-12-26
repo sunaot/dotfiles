@@ -19,6 +19,7 @@ function vE() { vim "+e ++enc=euc-jp $1"; }
 function vS() { vim "+e ++enc=cp932 $1"; }
 function vU() { vim "+e ++enc=utf-8 $1"; }
 
+alias tiga='tig --all'
 alias g='newgrp'
 alias i='id -a'
 # vim:filetype=sh
