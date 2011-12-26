@@ -38,7 +38,6 @@ set statusline=%<%f:%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%
 set t_Co=256
 colorscheme molokai
 " set backupcopy=yes
-set encoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp,iso-2011-jp
 set fileformats=unix,dos,mac
 set ambiwidth=double
