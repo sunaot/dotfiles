@@ -13,7 +13,7 @@ Bundle 'neocomplcache'
 Bundle 'surround.vim'
 Bundle 'indenthaskell.vim'
 Bundle 'eregex.vim'
-Bundle 'Align.vim'
+" Bundle 'Align.vim'
 " Align.vim needs to convert CR-LF (DOS style) to LF ONLY (Unix style). Use ":set fileformat=unix" and overwrite it.
 " colorscheme bundles
 Bundle 'tomasr/molokai'
