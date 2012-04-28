@@ -1,6 +1,7 @@
 #!/bin/sh
 # pre-condition:
 #   git clone git://github.com/sunaot/dotfiles.git
+#   vim >= version 7.0
 cd ~
 mv dotfiles .dotfiles
 
@@ -8,10 +9,10 @@ mv dotfiles .dotfiles
 mkdir .rc_backup
 mv .bashrc .rc_backup
 mv .bash_profile .rc_backup
-test .vimrc && mv .vimrc .rc_backup
-test .vim   && mv .vim .rc_backup
-test .screenrc && mv .screenrc .rc_backup
-test .screen   && mv .screen .rc_backup
+test -e .vimrc && mv .vimrc .rc_backup
+test -e .vim   && mv .vim .rc_backup
+test -e .screenrc && mv .screenrc .rc_backup
+test -e .screen   && mv .screen .rc_backup
 
 # install
 ln -s .dotfiles/.bashrc
