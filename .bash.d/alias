@@ -1,14 +1,18 @@
-alias rawls='/bin/ls'
-alias ls='ls --color=auto --show-control-char'
+#alias rawls='/bin/ls'
+if [ `uname` = "Darwin" ]; then
+  echo -n # nothing to do
+elif [ `uname` = "Linux" ]; then
+  alias ls='ls --color=auto --show-control-char'
+fi
 alias l='ls -l'
 alias la='ls -la'
 alias ee='exit'
 alias e='exit'
 alias rm='rm -i'
 alias lr='less -r'
+alias ack="ack --color-filename='bold magenta'"
+alias ackp="ack --color-filename='bold magenta' --pager='less -r'"
 alias grep="grep --color=auto -iP --exclude='tags' --exclude='*.svn-*' --exclude='entries' --exclude='*.git-*'"
-alias cgrep='/bin/grep --color=always'
-alias ngrep='/bin/grep --color=never'
 
 alias c='cd'
 alias x='cd ..'
@@ -19,7 +23,8 @@ function vE() { vim "+e ++enc=euc-jp $1"; }
 function vS() { vim "+e ++enc=cp932 $1"; }
 function vU() { vim "+e ++enc=utf-8 $1"; }
 
+alias g='git'
+alias gs='git status'
+alias gto='git checkout'
 alias tiga='tig --all'
-alias g='newgrp'
-alias i='id -a'
 # vim:filetype=sh

@@ -8,13 +8,12 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'quickrun'
-Bundle 'The-NERD-tree'
 Bundle 'neocomplcache'
 Bundle 'surround.vim'
 Bundle 'indenthaskell.vim'
 Bundle 'eregex.vim'
 Bundle 'Markdown'
-" Bundle 'ctrlp.vim' " <c-p> conflicts with :bprevious setting
+Bundle 'unite.vim'
 " Bundle 'Align.vim'
 " Align.vim needs to convert CR-LF (DOS style) to LF ONLY (Unix style). Use ":set fileformat=unix" and overwrite it.
 " colorscheme bundles
@@ -73,6 +72,15 @@ imap () ()<Left>
 imap '' ''<Left>
 imap "" ""<Left>
 imap \|\| \|\|<Left>
+
+let g:unite_enable_start_insert=1
+noremap <C-U><C-B> :UniteWithBufferDir buffer -buffer-name=buffer<CR>
+noremap <C-U><C-F> :Unite file -buffer-name=files<CR>
+noremap <C-U><C-R> :UniteWithCurrentDir file -buffer-name=files<CR>
+noremap <C-U><C-O> :Unite buffer file -buffer-name=files<CR>
+au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
+au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
+
 
 " quickrun options
 if exists('g:loaded_quickrun')

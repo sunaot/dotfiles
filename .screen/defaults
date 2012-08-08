@@ -47,6 +47,9 @@ deflogin off
 termcapinfo screen* OL=8196
 termcapinfo xterm* OL=256
 
+# terminal doesn't have an alternate screen to enable terminal's screllback signal
+termcapinfo xterm* ti@:te@
+
 # Nuke and pave.
 autonuke on
 
