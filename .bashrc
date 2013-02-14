@@ -13,7 +13,7 @@ source ~/.bash.d/functions
 # User specific aliases and functions
 complete -d cd # cd の補完ではディレクトリのみを対象にする
 
-GREPCMD=`which grep`
+GREPCMD=`/usr/bin/which grep`
 # Prompt setting
 if which git > /dev/null 2>&1 && ruby -e 'exit 0' > /dev/null 2>&1 ; then
   # with Git and Ruby
