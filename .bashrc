@@ -5,7 +5,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export LANG=ja_JP.utf8
+export LANG=`locale -a|/bin/grep --color=none -iP "ja_jp\.utf-?8" || echo -n C`
 source ~/.bash.d/history
 source ~/.bash.d/alias
 source ~/.bash.d/functions
