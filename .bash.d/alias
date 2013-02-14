@@ -15,6 +15,7 @@ alias ackp="ack --color-filename='bold magenta' --pager='less -r'"
 alias grep="grep --color=auto -iP --exclude='tags' --exclude='*.svn-*' --exclude='entries' --exclude='*.git-*'"
 
 alias c='cd'
+alias t='cd'
 alias x='cd ..'
 alias b='cd -'
 alias v='vim'
