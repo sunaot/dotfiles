@@ -25,6 +25,7 @@ function vU() { vim "+e ++enc=utf-8 $1"; }
 
 alias g='git'
 alias gs='git status'
+alias gl='git log --oneline --decorate'
 alias gto='git checkout'
 alias tiga='tig --all'
 # vim:filetype=sh
