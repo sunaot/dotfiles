@@ -5,7 +5,8 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export LANG=`locale -a|/bin/grep --color=none -iP "ja_jp\.utf-?8" || echo -n C`
+GREPCMD=`/usr/bin/which grep`
+export LANG=`locale -a|$GREPCMD --color=none -iP "ja_jp\.utf-?8" || echo -n C`
 source ~/.bash.d/history
 source ~/.bash.d/alias
 source ~/.bash.d/functions
@@ -13,7 +14,6 @@ source ~/.bash.d/functions
 # User specific aliases and functions
 complete -d cd # cd の補完ではディレクトリのみを対象にする
 
-GREPCMD=`/usr/bin/which grep`
 # Prompt setting
 if which git > /dev/null 2>&1 && perl -e '1;' > /dev/null 2>&1 ; then
   # with Git and Perl
