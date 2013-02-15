@@ -1,6 +1,7 @@
 #alias rawls='/bin/ls'
 if [ `uname` = "Darwin" ]; then
-  echo -n # nothing to do
+  export LSCOLORS='ExGxDxDxCxDgDxabagacad'
+  alias ls='ls -G'
 elif [ `uname` = "Linux" ]; then
   alias ls='ls --color=auto --show-control-char'
 fi
