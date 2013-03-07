@@ -1,4 +1,7 @@
 #!/bin/bash
+# to use this sample,
+#     $ mkdir -p ~/.bash.d && cd ~/.bash.d
+#     $ ln -s ../.dotfiles/.bash.d/perl.sample perl
 function perl_local() {
     if [ -e ./.cpan ]; then
         perl -I.cpan/lib/perl5 $@
