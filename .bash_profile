@@ -10,5 +10,4 @@ export PATH=$HOME/bin:$PATH
 
 stty stop undef # stop terminal locking (then Ctrl+S would be free.)
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-
+# vim: nowrap sw=2 sts=2 ts=2 noet ff=unix:
