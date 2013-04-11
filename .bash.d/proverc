@@ -1,0 +1,5 @@
+--exec "perl -Ilib -It/lib"
+--color
+--merge
+--timer
+-w
