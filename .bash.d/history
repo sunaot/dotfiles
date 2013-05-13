@@ -7,5 +7,4 @@ function share_history {
     history -r
 }
 PROMPT_COMMAND='share_history'
-shopt -u histappend
 # vim:filetype=sh
