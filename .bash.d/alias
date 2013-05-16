@@ -21,9 +21,9 @@ alias x='cd ..'
 alias b='cd -'
 alias v='vim'
 alias view='vim -R'
-function vE() { vim "+e ++enc=euc-jp $1"; }
-function vS() { vim "+e ++enc=cp932 $1"; }
-function vU() { vim "+e ++enc=utf-8 $1"; }
+function vE() { vim "+e ++enc=euc-jp $@"; }
+function vS() { vim "+e ++enc=cp932 $@"; }
+function vU() { vim "+e ++enc=utf-8 $@"; }
 
 alias g='git'
 alias gs='git status'
