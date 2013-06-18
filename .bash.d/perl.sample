@@ -10,14 +10,6 @@ function perl_local() {
     fi
 }
 
-function prove_local() {
-    if [ -e ./.cpan ]; then
-        prove -I.cpan/lib/perl5 $@
-    else
-        prove $@
-    fi
-}
-
 function cpanm_local() {
     if [ -e ./.cpan ]; then
         cpanm -l.cpan $@
@@ -27,14 +19,12 @@ function cpanm_local() {
 }
 
 unalias perl  >/dev/null 2>&1 # should unalias here to eval local::lib correctly
-unalias prove >/dev/null 2>&1
 unalias cpanm >/dev/null 2>&1
 
 export PERL_CPANM_OPT="--local-lib=~/.perl"
 eval $(perl -I$HOME/.perl/lib/perl5 -Mlocal::lib=$HOME/.perl)
 
 alias perl='perl_local'
-alias prove='prove_local'
 alias cpanm='cpanm_local'
 
 

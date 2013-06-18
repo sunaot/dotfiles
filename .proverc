@@ -1,5 +1,6 @@
---exec "perl -Ilib -It/lib"
+--exec "perl -Ilib -It/lib -I.cpan/lib/perl5 -MTest::Pretty"
 --color
+--verbose
 --merge
 --timer
 -w
