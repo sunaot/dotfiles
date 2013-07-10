@@ -35,7 +35,5 @@ source ~/.bash.d/history
 source ~/.bash.d/alias
 source ~/.bash.d/functions
 [ -e ~/.bash.d/perl ] && source ~/.bash.d/perl
-[ -e ~/.bash.d/ruby ] && source ~/.bash.d/ruby
-
 
 # vim: nowrap sw=2 sts=2 ts=2 noet ff=unix:
