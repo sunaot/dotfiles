@@ -15,8 +15,8 @@ test -e .screenrc && mv .screenrc .rc_backup
 test -e .screen   && mv .screen .rc_backup
 
 # install
-ln -s .dotfiles/.bashrc
-ln -s .dotfiles/.bash_profile
+echo 'source .dotfiles/.bashrc' > .bashrc
+echo 'source .dotfiles/.bash_profile' > .bash_profile
 ln -s .dotfiles/.bash.d
 ln -s .dotfiles/.bin
 ln -s .dotfiles/.vimrc

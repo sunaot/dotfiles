@@ -16,7 +16,6 @@ SYSTEMPERL='/usr/bin/perl'
 if [ `uname` = "Darwin" ]; then
   CURRENT_GROUP_NAME='id -gn'
 elif [ `uname` = "Linux" ]; then
-	# '"'"' はエスケープされた '
   CURRENT_GROUP_NAME='id -a | $SYSTEMPERL -e "while(<>) { print \$_ =~ /gid=\\d+\\((.*?)\\)/ }"'
 fi
 CURRENT_GIT_BRANCH='git branch 2>/dev/null | \grep "^[*]" | cut -d " " -f 2'
