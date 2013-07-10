@@ -14,6 +14,7 @@ alias lr='less -r'
 alias ack="ack --color-filename='bold magenta'"
 alias ackp="ack --color-filename='bold magenta' --pager='less -r'"
 alias grep="grep --color=auto -iP --exclude='tags' --exclude='*.svn-*' --exclude='entries' --exclude='*.git-*'"
+alias be="bundle exec"
 
 alias c='cd'
 alias t='cd'
