@@ -27,7 +27,7 @@ ln -s .dotfiles/.screen
 # setup vim 
 mkdir .vim/bundle
 cd .vim/bundle
-git clone git://github.com/gmarik/vundle.git vundle
+git clone git@github.com:gmarik/vundle.git vundle
 cd ~
 
 echo "to complete the vim installation, run vim and :BundleInstall"
