@@ -31,4 +31,7 @@ alias gs='git status'
 alias gl='git log --oneline --decorate'
 alias gto='git checkout'
 alias tiga='tig --all'
+alias git_current_branch="git symbolic-ref HEAD 2>/dev/null | sed -e 's/refs\/heads\///'"
+alias git_current=git_current_branch
+alias gitb=git_current_branch
 # vim:filetype=sh
