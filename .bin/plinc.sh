@@ -1,2 +1,2 @@
 #!/bin/sh
-find `perl -e 'print join(" ", grep {$_ ne "."} @INC)'` -name *.pm -print | sort -u
+find `perl -e 'map { print $_, " " unless $_ eq "." } @INC'` -type f -name *.pm -print | sort -u
