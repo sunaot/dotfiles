@@ -42,6 +42,7 @@ colorscheme molokai
 set fileencodings=utf-8,cp932,euc-jp,iso-2011-jp
 set fileformats=unix,dos,mac
 set ambiwidth=double
+set visualbell
 
 " Insert <Tab> or complete identifier
 " if the cursor is after a keyword character

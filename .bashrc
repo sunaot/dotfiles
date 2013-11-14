@@ -6,6 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 export LANG=`locale -a| \grep --color=none -iP "ja_jp\.utf-?8" || echo -n C`
+export LESS=-q
 
 # User specific aliases and functions
 complete -d cd # cd の補完ではディレクトリのみを対象にする
