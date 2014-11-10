@@ -1,4 +1,4 @@
---exec "perl -Ilib -It/lib -I.cpan/lib/perl5 -MTest::Pretty"
+--exec "perl -Ilib -It/lib -I.cpan/lib/perl5 -Ipm -I.cpan -MTest::Pretty"
 --color
 --verbose
 --merge
