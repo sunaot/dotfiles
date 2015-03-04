@@ -13,6 +13,8 @@ test -e .vimrc && mv .vimrc .rc_backup
 test -e .vim   && mv .vim .rc_backup
 test -e .screenrc && mv .screenrc .rc_backup
 test -e .screen   && mv .screen .rc_backup
+test -e .gitconfig       && mv .gitconfig .rc_backup
+test -e .gitconfig-local && mv .gitconfig-local .rc_backup
 
 # install
 echo 'source .dotfiles/.bashrc' > .bashrc
@@ -23,6 +25,8 @@ ln -s .dotfiles/.vimrc
 ln -s .dotfiles/.vim
 ln -s .dotfiles/.screenrc
 ln -s .dotfiles/.screen
+ln -s .dotfiles/.gitconfig
+touch .gitconfig-local
 
 # setup vim 
 mkdir .vim/bundle

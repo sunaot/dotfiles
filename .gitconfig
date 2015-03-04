@@ -1,0 +1,28 @@
+[color]
+	ui = auto
+[alias]
+	s = status
+	st = status
+	new = checkout -b
+	bye = branch -d
+	byebye = branch -D
+	to = checkout
+	ls = branch
+	ps = push
+	pl = pull --ff-only
+	pr = pull --rebase
+	amend = commit --amend
+	l = log --oneline --decorate
+	d = diff
+	di = diff
+	dic = diff --cached
+	diffprev = diff HEAD^
+	dip = diff HEAD^
+	dipp = diff HEAD^^
+	dippp = diff HEAD^^^
+	rollback = checkout
+	rb = checkout
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+[include]
+	path = .gitconfig-local
