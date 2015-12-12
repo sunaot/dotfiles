@@ -19,7 +19,7 @@ if [ `uname` = "Darwin" ]; then
 elif [ `uname` = "Linux" ]; then
   CURRENT_GROUP_NAME='id -a | $SYSTEMPERL -e "while(<>) { print \$_ =~ /gid=\\d+\\((.*?)\\)/ }"'
 fi
-CURRENT_GIT_BRANCH="git symbolic-ref HEAD 2>/dev/null | sed -e 's/refs\/heads\///'" # will be use --short option
+CURRENT_GIT_BRANCH="git symbolic-ref HEAD 2>/dev/null | sed -e 's/refs\/heads\///'" # will use --short option instead
 if which git > /dev/null 2>&1 && $SYSTEMPERL -e '1;' > /dev/null 2>&1 ; then
   # with Git and Perl
   export PS1="\[\033[1;4;32m\][\H]:\[\033[0m\]\[\033[1;37m\]\w\[\033[0m\]\n[\[\033[1;31m\]\$($CURRENT_GIT_BRANCH)\[\033[0m\]|\u(\[\033[1;36m\]\$($CURRENT_GROUP_NAME)\[\033[0m\])]\\$ "
