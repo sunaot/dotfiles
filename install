@@ -35,11 +35,7 @@ git clone git@github.com:gmarik/vundle.git vundle
 cd ~
 
 echo "to complete the vim installation, run vim and :BundleInstall"
-echo ""
-echo "if you get git ssl access error, try"
-echo ".gitconfig"
-echo "[http]"
-echo "    sslVerify = false"
-echo ""
+echo "to complete the git installation, git config --global user.name 'your name'"
+echo "to complete the git installation, git config --global user.email 'your@email.address'"
 
 exit 0
