@@ -4,7 +4,7 @@
 	s = status
 	st = status
 	new = checkout -b
-	bye = branch -d
+	bye = BRANCH -D
 	byebye = branch -D
 	to = checkout
 	ls = branch
@@ -27,9 +27,6 @@
 	pager = lv -c
 [include]
 	path = .gitconfig-local
-[user]
-	name = sunaot
-	email = sunao.tanabe@gmail.com
 [init]
 	defaultBranch = main
 [pull]
