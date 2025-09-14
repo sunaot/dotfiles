@@ -24,7 +24,7 @@
 	rb = checkout
 [core]
 	editor = vim -c \"set fenc=utf-8\"
-	pager = lv -c
+	pager = less -R
 [include]
 	path = .gitconfig-local
 [init]
