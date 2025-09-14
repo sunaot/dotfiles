@@ -64,15 +64,6 @@ imap '' ''<Left>
 imap "" ""<Left>
 imap \|\| \|\|<Left>
 
-let g:unite_enable_start_insert=1
-noremap <C-U><C-B> :UniteWithBufferDir buffer -buffer-name=buffer<CR>
-noremap <C-U><C-F> :Unite file -buffer-name=files<CR>
-noremap <C-U><C-R> :UniteWithCurrentDir file -buffer-name=files<CR>
-noremap <C-U><C-O> :Unite buffer file -buffer-name=files<CR>
-au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
-au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
-
-
 " quickrun options
 if exists('g:loaded_quickrun')
   source ~/.vim/quickrunrc
