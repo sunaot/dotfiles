@@ -3,12 +3,7 @@ if [ -f /etc/zshrc ]; then
 	. /etc/zshrc
 fi
 
-if [ `uname` = "Darwin" ]; then
-	GREP='ggrep'
-elif [ `uname` = "Linux" ]; then
-	GREP='grep'
-fi
-export LANG=`locale -a| $GREP --color=none -iP "ja_jp\.utf-?8" || echo -n C`
+export LANG=ja_JP.UTF-8
 export LESS=-q
 
 # プロンプトを設定
@@ -39,6 +34,5 @@ PROMPT="${LINE1}${COLOR_DEF}"$'\n'"${LINE2}${COLOR_DEF}%# "
 source ~/.bash.d/history
 source ~/.bash.d/alias
 source ~/.bash.d/functions
-[ -e ~/.bash.d/perl ] && source ~/.bash.d/perl
 
 # vim:filetype=sh

@@ -5,7 +5,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export LANG=`locale -a| $GREP --color=none -iP "ja_jp\.utf-?8" || echo -n C`
+export LANG=ja_JP.UTF-8
 export LESS=-q
 
 # User specific aliases and functions
