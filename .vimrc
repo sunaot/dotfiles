@@ -6,24 +6,15 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-" My Bundles here:
 Bundle 'quickrun'
-Bundle 'neocomplcache'
 Bundle 'surround.vim'
 Bundle 'indenthaskell.vim'
 Bundle 'eregex.vim'
 Bundle 'Markdown'
-Bundle 'unite.vim'
-" Bundle 'Align.vim'
-" Align.vim needs to convert CR-LF (DOS style) to LF ONLY (Unix style). Use ":set fileformat=unix" and overwrite it.
-" colorscheme bundles
 Bundle 'tomasr/molokai'
 Bundle 'Wombat'
 Bundle 'Zenburn'
 " </Vundle>
-" <neocomplcache see="https://github.com/Shougo/neocomplcache/blob/master/README">
-let g:neocomplcache_enable_at_startup = 1
-" </neocomplcache>
 
 " start original .vimrc statements
 filetype on
@@ -38,7 +29,6 @@ set laststatus=2
 set statusline=%<%f:%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 set t_Co=256
 colorscheme molokai
-" set backupcopy=yes
 set fileencodings=utf-8,cp932,euc-jp,iso-2011-jp
 set fileformats=unix,dos,mac
 set ambiwidth=double

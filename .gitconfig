@@ -27,3 +27,10 @@
 	pager = lv -c
 [include]
 	path = .gitconfig-local
+[user]
+	name = sunaot
+	email = sunao.tanabe@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false

@@ -1,0 +1,4 @@
+#!/bin/bash
+# OSC 52 escape sequence to copy to clipboard
+# Base64エンコードして、ターミナルのクリップボードに送信する
+printf "\e]52;c;$(base64 | tr -d '\n')\a"
