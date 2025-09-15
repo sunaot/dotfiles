@@ -29,6 +29,15 @@ set laststatus=2
 set statusline=%<%f:%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 set t_Co=256
 colorscheme molokai
+" Add transparency on background color to the colorscheme
+highlight Normal ctermbg=NONE guibg=NONE
+highlight NonText ctermbg=NONE guibg=NONE
+highlight Special ctermbg=NONE guibg=NONE
+highlight LineNr ctermbg=NONE guibg=NONE
+highlight SignColumn ctermbg=NONE guibg=NONE
+highlight VertSplit ctermbg=NONE guibg=NONE
+" highlight StatusLine ctermbg=NONE guibg=NONE
+
 set fileencodings=utf-8,cp932,euc-jp,iso-2011-jp
 set fileformats=unix,dos,mac
 set ambiwidth=double
